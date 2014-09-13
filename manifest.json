@@ -1,17 +1,20 @@
 {
+  "manifest_version": 2,
   "name": "Quick Bookmarks",
   "description": "Access bookmarks via popup menu",
-  "version": "3.14",
+  "version": "3.15",
   "icons": {
-      "48": "icons/user-bookmarks-48.png",
-      "32": "icons/user-bookmarks-32.png"
+    "48": "icons/user-bookmarks-48.png",
+    "32": "icons/user-bookmarks-32.png"
   },
-  "background_page": "background.html",
+  "background": {
+    "page": "background.html"
+  },
   "browser_action": {
     "default_icon": "icons/book-blue.png",
     "default_title": "Bookmarks",
     "name": "Quick Bookmarks",
-    "popup": "popup.html"
+    "default_popup": "popup.html"
   },
   "permissions": [
     "tabs",

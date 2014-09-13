@@ -228,3 +228,7 @@ function loadFolder(id) {
 function init() {
     loadFolder(localStorage.startId || rootId);
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  init();
+});
